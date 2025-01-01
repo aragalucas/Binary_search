@@ -1,5 +1,11 @@
+import sys
 import random
+from pyfiglet import Figlet
+figlet = Figlet()
+fg = figlet.getFonts()
+figlet.setFont(font= "banner")
 
+print(figlet.renderText("binary guess"))
 modoJogo = input("digite 2 para jogar e 1 para o computador jogar: ")
 if modoJogo == "1":
    numeroMaximo = int(input("quantos numeros possiveis: "))
